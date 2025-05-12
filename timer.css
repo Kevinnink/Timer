@@ -1,8 +1,135 @@
-body {
-    background: rgb(43, 43, 43);
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 20px;
+/* Resetando margens e bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Estilo geral do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff; /* Cor de fundo suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+/* Efeito de fade in para o body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do título */
+#titulo {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-bottom: 30px;
+    animation: slideUp 1s ease-out; /* Título deslizando */
+}
+
+/* Animação do título deslizante */
+@keyframes slideUp {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo do botão */
+input[type="button"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: transform 0.2s ease;
+    animation: fadeInUp 1.5s ease-out; /* Animação do botão */
+}
+
+/* Animação do botão */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de hover no botão */
+input[type="button"]:hover {
+    transform: scale(1.05); /* Aumenta o botão levemente */
+}
+
+/* Estilo para inputs de tempo */
+input[type="time"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+/* Foco nos inputs de tempo */
+input[type="time"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Estilo da área de resultados */
+#result, #resPratico, #resDescanso {
+    font-size: 2rem;
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Estilo para a seção de pratico e descanso */
+h5 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Efeito no footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    animation: slideUp 1.5s ease-out;
+}
+
+/* Animação no footer */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
