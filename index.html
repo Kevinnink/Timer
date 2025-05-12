@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <link rel="stylesheet" href="timer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">TIMER</h1><br>
+    <input type="button" value="Iniciar" id="start" onclick="iniciar()">
+    <input type="time" name="total" id="total">
+    <div id="result">
+        <p>result</p>
+    </div>
+    <div>
+        <h5>pratico // Descanso </h5>
+        <h6 id="resPratico"></h6>
+        <h6 id="resDescanso"></h6>
+        <input type="time" name="pratico" id="pratico">
+        <input type="time" name="descanso" id="descanso">
+
+        <audio id="somPratica" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+        <audio id="somDescanso" src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg"></audio>
+        <audio id="somFim" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>
